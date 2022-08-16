@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Portfolio of Daniel Zhang</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
 
-<head>
-	<title>Portfolio of Andrew Hong</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<style>
-		body,
-		html {
-			margin: 0px;
-			height: 100%;
-			/*
+			body, html{
+				margin:0px;
+				height: 100%;
+				/*
 				background-color: #0093E9;
 				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 				background-size: cover;
@@ -22,123 +21,162 @@
 				background-repeat: no-repeat;
 				overflow: hidden;
 				*/
-		}
+				overflow: scroll;
 
-		.top {
-			list-style-type: none;
-			margin: 0px;
-			padding: 0;
-			overflow: hidden;
-		}
+			}
+            .top {
+  			list-style-type: none;
+  			margin: 0px;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+		    }
 
-		.top>li {
-			float: left;
-		}
+            .top>li {
+                float: left;
+            }
 
-		.top>li a {
-			display: block;
-			color: white;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-		}
+            .top>li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
 
-		.img-fluid {
-			transition: transform .75s ease;
-			overflow: hidden;
-			box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
-		}
+            li a:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
 
-		li a:hover {
-			background-color: rgba(255, 255, 255, 0.25);
-		}
+            .col-sm-4{
+                text-align:center;
+            }
+            .img-fluid {
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
 
-		.body {
-			position: relative;
-			width: 90vw;
-			height: 85vh;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			transform: translateY(10%);
-			box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
-			background-color: white;
-			margin-bottom: 50px;
-		}
+            .img-fluid:hover {
+                transition: transform .75s ease;
+                transform: scale(1.05);
+            }
 
-		.bg-custom {
-			background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-		}
+            .video{
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
 
-		.Footer {
-			position: fixed;
-			height: 50px;
-			bottom: 0px;
-			left: 0px;
-			right: 0px;
-			margin-bottom: 0px;
-			text-align: center;
-			background-color: white;
-		}
+            .video:hover {
+                transition: transform .75s ease;
+                transform: scale(1.1);
+            }
 
-		.badge-normal {
-			background-color: #34b4eb;
-			color: white;
-		}
+			.body{
+				width:90vw;
+				height:85vh;
+				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				transform: translateY(10%);
+				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+				background-color: white;
+				margin-bottom:50px;
+                overflow:scroll
+			}
 
-		.btn-normal {
-			background-color: #34b4eb;
-			color: white;
-		}
-	</style>
-</head>
+			.scrollspy-example {
+    			position: relative;
+    			height: 90%;
+    			margin-top: .5rem;
+    			overflow: auto;
+			}
 
-<body>
+			.item{
+				margin-left: 25px;
+			}
 
-	<nav class="navbar navbar-expand-md bg-custom navbar-dark gradient">
-		<a class="navbar-brand" href="/">Home</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			.bg-custom {
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			}
+
+			.Footer {  
+				position: fixed;
+    			height: 50px;
+    			left: 0px;
+    			right: 0px;
+                width: 100%;
+    			margin-bottom: 0px;
+				text-align: center;
+				background-color: white;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                bottom: 0px;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			.badge-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+			.btn-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+        </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-custom navbar-dark">
+			<a class="navbar-brand" href="/ILS-citation.html">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div style="position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav">
-				<li class="nav-item" style="margin-right: 10px;"><a class="nav-link" href="/CV.html">CV</a></li>
-				<li class="nav-item"><a class="nav-link" href="/Projects.html">Projects</a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="container">
-		<div class="blurb">
-			<center>
-				<h1>Personal Website</h1>
+			</button>
+			<div style = "position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class = "navbar-nav active">
+					<li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/Research.html">Research</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Log.html">Log</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Pictures.html">Pictures</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Data.html">Data and Results</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Reflection.html">Reflection</a></li>
+				</ul>
+			</div>  
+		</nav>
+            <center>
+        		<h1>ILS-Citation</h1>
 			</center>
-		</div>
-	</div>
-	<div style="text-align: center;">
-		<img class="img-fluid" src=Images/IMG_0123.jpg alt="Profile" style="height:200px; width:900px "></img>
-		<br><br><br>
-		<p></p>
-
-
-		<div>
-			<div class="Footer">
-				<button type="button" class="btn btn-normal btn-sm"
-					onclick="openLink('mailto:d.zhang.hs@gmail.com')">Email</button>
-				<button type="button" class="btn btn-normal btn-sm"
-					onclick="openLink('https:/www.linkedin.com/in/daniel-zhang-8077aa23b/')">LinkedIn</button>
-				<button type="button" class="btn btn-normal btn-sm"
-					onclick="openLink('https://github.com/InDenia1')">Github</button>
-
+		
+    	<div>
+            <div>
+				<table  style = 'margin-left: 15px; margin-right: 15px'>
+					<tr>
+						<td><p> 
+							Hello! My name is Daniel Zhang, and I am currently a rising senior studying General Biology and Computer Science at the University of Maryland. Following college, I am still unsure of what I wish to do as I love both 
+							both fields very much, and I hope I am able to find a career in biotech that combines the two. Outside of class, I enjoy watching Chinese or Korean shows, doing Chinese Wushu/Taichi, and hanging out at the Taiwanese 
+							American Student Association. Between Janurary 2021 and August 2021, I worked at the HIVE Lab based in George Washington University under Dr. Raja Mazumder, working to create programs that allowed for effective 
+							application of Machine Learning and AI to microbiome data-sets. More information on my project can be found in other tabs.
+            
+						</p></td>
+						<td><img src = Images/Profile.png alt = "Profile" style = "height:300px; width:250px;"></img></td>
+					</tr>
+				</table>
+                <br><br><br>
+            <div>
 			</div>
 		</div>
+	
 
-
-</body>
-<script>
-	function openLink(link) {
-		console.log("clicked");
-		window.open(link, '_blank');
-	}
-</script>
-
+	</div>
+	</body>
+	<script>
+		function openLink(link){
+			console.log("clicked");
+			window.open(link, '_blank');
+		}
+	</script>		
 </html>
