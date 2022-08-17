@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Portfolio of Daniel Zhang</title>
+		<title>Portfolio of Andrew Hong</title>
 		<meta charset="utf-8">
   		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -128,18 +128,29 @@
 				background-color: #34b4eb;
 				color: white;
 			}
+			.column {
+  				float: left;
+  				width: 33.333%;
+  				padding: 5px;
+			}
 
+			/* Clear floats after image containers */
+			.row::after {
+  				content: "";
+  				clear: both;
+  				display: table;
+			}
         </style>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-custom navbar-dark">
-			<a class="navbar-brand" href="/ILS-citation.html">Home</a>
+			<a class="navbar-brand" href="/ILS-Citation.html">Home</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div style = "position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
 				<ul class = "navbar-nav active">
-					<li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/Research.html">Research</a></li>
+					<li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Research.html">Research</a></li>
                     <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Log.html">Log</a></li>
                     <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Pictures.html">Pictures</a></li>
                     <li class = "nav-item"><a class= "nav-link" href="/dzhang.github.io/ILS-Data.html">Data and Results</a></li>
@@ -148,26 +159,31 @@
 			</div>  
 		</nav>
             <center>
-        		<h1>ILS-Citation</h1>
+        		<h1>Pictures</h1>
 			</center>
 		
     	<div>
-            <div>
-				<table  style = 'margin-left: 15px; margin-right: 15px'>
-					<tr>
-						<td><p> 
-							Hello! My name is Daniel Zhang, and I am currently a rising senior studying General Biology and Computer Science at the University of Maryland. Following college, I am still unsure of what I wish to do as I love both 
-							both fields very much, and I hope I am able to find a career in biotech that combines the two. Outside of class, I enjoy watching Chinese or Korean shows, doing Chinese Wushu/Taichi, and hanging out at the Taiwanese 
-							American Student Association. Between Janurary 2021 and August 2021, I worked at the HIVE Lab based in George Washington University under Dr. Raja Mazumder, working to create programs that allowed for effective 
-							application of Machine Learning and AI to microbiome data-sets. More information on my project can be found in other tabs.
-            
-						</p></td>
-						<td><img src = Images/Profile.png alt = "Profile" style = "height:300px; width:250px;"></img></td>
-					</tr>
-				</table>
-                <br><br><br>
-            <div>
-			</div>
+            <div style = 'margin-left: 15px; margin-right: 15px; text-align: center;'>
+                <p> Everything was virtual so here are some photos of me working about my desk.
+                </p>
+				<div class="row">
+					<div class="column">
+						<td><img src = Images/image8.png alt = "Profile" style = "height:300px; width:250px;"></img></td>
+					</div>
+					<div class="column">
+						<td><img src = Images/image9.png alt = "Profile" style = "height:300px; width:250px;"></img></td>
+					</div>
+					<div class="column">
+						<td><img src = Images/image10.png alt = "Profile" style = "height:300px; width:250px;"></img></td>
+					</div>
+				  </div>
+            </div>
+			<!-- <div class="Footer">
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
+
+			</div> -->
 		</div>
 	
 
