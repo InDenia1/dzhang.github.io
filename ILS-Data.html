@@ -98,7 +98,7 @@
 			}
 
 			.bg-custom {
-				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+				background-image: linear-gradient(160deg, #0093E9 0%, #00008B 100%);
 			}
 
 			.Footer {  
@@ -165,55 +165,22 @@
 			</center>
 		
     	<div>
-            <div style = 'margin-left: 15px; margin-right: 15px; text-align: center;'>
-				<p><b>Preface:</b> For privacy reasons of what the lab is working on</p> <br>
-				<p>Here is an example of the resulting SQL query. Each column represents a layer of the visualization. IDs connect to key words and key words connect to IDs.
-					A special feature of this algorithm I developed is that there are <b>no</b> repeated terms, meaning that an ID that appears in the first column will not appear 
-					in the third column. This prevents the incident of a repetitive loop of the same ID and key word in multiple columns. "NULL" is used as a placeholder for an empty entry.
+            <div style = 'margin-left: 15px; margin-right: 15px; text-align: center;'> <br>
+				<p>Preface: Due to privacy of the lab, the actual data I was looking at cannot be shown. Therefor, I have asked and am using
+					figures that my mentor is okay with me sharing and giving a generalized perspective of how my work contributed to research.
 				</p>
-				<img src = Images/Result.PNG alt = "Profile" style = "height:300px; width:300px;"> <br> <br> <br> <br>
-				<p> To quantitatively show the efficiency of the new algorithm, I compared the time required to complete the SQL query for the between the old and new algorithm. Within the code, I included a time variable 
-					to determine the time elapsed to display the visualization web page. After completing 15 trials for each algorithm I obtained these results. The old algorithm had an average run time of 10.05 seconds while the
-					algoritm had an averge runtime of 1.04 seconds. This clearly shows that the new algorithm is more efficient than the old design.
+				<p>This is an example of the types of different machine learning tests we would run. Looking at these, we would determine the best
+					model to use on any specific data set based on it's accuracy (In this example it is the Ensemble-Subspace Discriminant).
+				</p>
+				<img src = Images/Model.PNG alt = "Profile" style = "height:300px; width:300px;"> <br> <br> <br> <br>
+				<p> With this in mind, we can extract the "important predictors" or bacterium that seemed to have an impact based on the model that best fits.
+				</p>
+				<img src = Images/Predictors.png alt = "Profile" style = "height:300px; width:500px;"> <br> <br> <br> <br>
+				<p> This leads to us being able to identify which bacterium may play an important role in diseases, allowing the researchers to have better insight
+					into what to study. In this example below, we have a chart comparing the abundance of certain bacteroides identified through the algorithm present in
+					WT-basal to TGFB deficient-basal, and that we believe these Bacteroides being in lower abundance may have a role in what is causing the disease.
 				</p>
 				<img src = Images/charts.png alt = "Profile" style = "height:300px; width:500px;"> <br> <br> <br> <br>
-				<p>Here is an example of a visualization for the search term "crystal structure" (note: a smaller data table is being used instead of the COVID-19 data table in this example for testing purposes). 
-					Each sphere represents a node (key word or unique ID). Above each node is the key word/ID associated with each node. I added a feature to remove labels with the simple click of a button.
-				</p>
-				<div class="row">
-					<div class="column">
-						<td><img src = Images/image_1.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-					<div class="column">
-						<td><img src = Images/image2.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-				  </div>
-				<br><br><br>
-				<p>The user can also customize the design of the nodes using the settings tab. For example, this is what happens if I make every node red.
-				</p>
-				<div class="row">
-					<div class="column">
-						<td><img src = Images/image3.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-					<div class="column">
-						<td><img src = Images/image4.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-				  </div> <br> <br> <br>
-				  <p>By clicking on a node, the user obtains a URL that leads to the article associated with that node on the top left of the page. Here is an example.
-					<div class="row">
-					<div class="column">
-						<td><img src = Images/image6.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-					<div class="column">
-						<td><img src = Images/image5.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
-					</div>
-				  </div>
-            </div>
-			<!-- <div class="Footer">
-				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
-				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
-				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
-			</div> -->
 		</div>
 	
 
